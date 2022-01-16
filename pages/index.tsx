@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import Image1 from '/assets/principal-main-page.png'
 
 
 const Home: NextPage = () => {
@@ -22,13 +23,18 @@ const Home: NextPage = () => {
         </div>
       </nav>
 
-      <div className='w-full h-screen flex justify-center items-center'>
-        <div className="h-screen flex-col justify-center items-start">
-          <h1>Lorem ipsum sit dolor amet</h1>
+      <div className='w-full h-screen flex pl-32'>
+        <div className="h-screen w-[50%] flex flex-col justify-center items-start">
+          <h1 className="font-sans font-bold text-[60px] text-[#7E2ADB] w-[500px] pb-7">Lorem ipsum sit dolor amet.</h1>
+          <button className="bg-[#7E2ADB] text-white text-[20px] rounded-[19px] w-[230px] h-[50px] font-sans shadow-lg">
+          <Link href="/cadastro">
+            Quero aprender
+          </Link>
+          </button>
         </div>
-        <div>
-
-        </div>
+        <div className="h-screen w-[50%] flex flex-col justify-center items-center pr-32">
+          <Image src={Image1} width="771px" height="720px"/>
+          </div>
       </div>
 
     </div>
