@@ -23,19 +23,31 @@ const Home: NextPage = () => {
         </div>
       </nav>
 
-      <div className='w-full h-screen flex flex-col-reverse justify-center items-center lg:flex-row pl-8 pr-8 xl:pl-32 xl:pr-32 lg:pl-16 lg:pr-16 pt-16'>
-        <div className="lg:h-screen h-fit lg:w-[50%] w-[100%] flex flex-col justify-center items-start pb-28">
-          <h1 className="font-bold text-[34px] sm:text-[44px] md:text-[55px] text-[#7E2ADB] w-[100%] sm:w-[70%] md:w-[70%] lg:w-[500px] pb-4">Lorem ipsum sit dolor amet.</h1>
-          <h2 className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#646464] w-[100%] sm:w-[70%] md:w-[50%] lg:w-[400px] pb-5">Lorem ipsum sit dolor amet lux elementum et laoreet.</h2>
-          <button className="bg-[#7E2ADB] text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] rounded-[12px] md:rounded-[16px] lg:rounded-[19px] w-[200px] md:w-[230px] h-[40px] md:h-[50px] shadow-lg">
-          <Link href="/cadastro">
-            Quero aprender
-          </Link>
-          </button>
-        </div>
-        <div className="lg:h-screen h-fit w-[100%] lg:w-[50%] lg:pt-0 flex flex-row justify-center items-center">
-          <Image src={Image1} width="771px" height="720px" />
-          </div>
+      <div className='w-full h-screen
+          flex flex-col-reverse justify-center items-center lg:flex-row 
+          pl-8 pr-8 pt-16 xl:pl-32 xl:pr-32 lg:pl-16 lg:pr-16'>
+            <div className="h-fit w-[100%] lg:w-[50%] lg:h-screen flex flex-col justify-center items-start pb-28">
+              <h1 className="w-[100%] sm:w-[70%] md:w-[70%] lg:w-[500px] pb-4
+                font-bold text-[#7E2ADB] text-[34px] sm:text-[44px] md:text-[55px]">
+                  Lorem ipsum sit dolor amet.
+              </h1>
+              <h2 className="w-[100%] sm:w-[70%] md:w-[50%] lg:w-[400px] pb-5
+              text-[#646464] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  Lorem ipsum sit dolor amet lux elementum et laoreet.
+              </h2>
+              <button className="w-[200px] md:w-[230px] h-[40px] md:h-[50px]
+                  text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+                    rounded-[12px] md:rounded-[16px] lg:rounded-[19px] 
+                  bg-[#7E2ADB] shadow-lg">
+                      <Link href="/cadastro">
+                        Quero aprender
+                      </Link>
+              </button>
+            </div>
+            <div className="h-fit w-[100%] lg:h-screen lg:w-[50%] lg:pt-0 
+                  flex flex-row justify-center items-center">
+                    <Image src={Image1} width="771px" height="720px" />
+            </div>
       </div>
 
     </div>
