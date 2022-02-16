@@ -40,7 +40,7 @@ const Login: NextPage = () => {
                   <button className="h-[40px] md:h-[50px] w-[150px] md:w-[170px]
                   text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]
                   rounded-[12px] md:rounded-[16px] lg:rounded-[20px] 
-                  bg-[#7E2ADB]shadow-lg">
+                  bg-[#7E2ADB] shadow-lg">
                     <Link href="/#">
                       Entrar
                     </Link>
