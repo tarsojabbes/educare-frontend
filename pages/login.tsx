@@ -7,10 +7,10 @@ const Login: NextPage = () => {
       flex flex-col md:flex-row justify-between items-center
       bg-[#E5E5E5]">
         
-      <div className="h-[100vh] w-[50%] md:w-[75%] lg:w-[50%] 
+      <div className="h-[100vh] w-[50%] md:w-[75%] xl:w-[50%] 
       flex flex-col items-center justify-end md:flex-row-reverse md:justify-center md:absolute md:right-0
       z-50">
-        <main className="h-[90%] md:h-fit w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[38vw] pt-20 pb-20 p-10
+        <main className="h-[90%] md:h-fit w-[90vw] sm:w-[80vw] md:w-[60vw] xl:w-[38vw] pt-20 pb-20 p-10
               flex flex-col justify-center items-center
               bg-[#FFF] rounded-t-3xl md:rounded-3xl shadow-lg">
                 <h1 className="text-[30px] md:text-[36px] lg:text-[40px] text-[#7E2ADB]">
@@ -30,14 +30,13 @@ const Login: NextPage = () => {
                   border-solid border-2 border-[#7E2ADB] focus:outline-none
                   rounded-[12px] md:rounded-[16px] lg:rounded-[16px]" />
                 </form>
-                <div className="w-full flex justify-between items-center">
-                  <span className="text-[#646464]">
-                    Não possui uma conta? <br/>
-                    <a className="underline text-[#7E2ADB] cursor-pointer">
-                      Cadastre-se
+                <div className="flex flex-col-reverse md:flex-row justify-between items-center w-full py-4">
+                  <span className="text-[#646464] pt-4">
+                    Não possui uma conta? 
+                    <a className="underline text-[#7E2ADB] cursor-pointer"> Cadastre-se
                     </a>
                   </span>
-                  <button className="h-[40px] md:h-[50px] w-[150px] md:w-[170px]
+                  <button className="h-[40px] md:h-[50px] w-[150px] md:w-[170px] min-w-fit px-8
                   text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]
                   rounded-[12px] md:rounded-[16px] lg:rounded-[20px] 
                   bg-[#7E2ADB] shadow-lg">
@@ -49,7 +48,7 @@ const Login: NextPage = () => {
         </main>
       </div>
 
-      <aside className="h-screen md:h-screen w-[100%] md:w-[25%] lg:w-[50%] pl-10 pt-10 
+      <aside className="h-screen md:h-screen w-[100%] md:w-[25%] xl:w-[50%] pl-10 pt-10 
         md:block absolute
         md:rounded-r-[40px] 
         bg-cover bg-[url('../assets/waves-bg.png')] bg-no-repeat">
