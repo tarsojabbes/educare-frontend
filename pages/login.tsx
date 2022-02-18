@@ -20,18 +20,20 @@ const Login: NextPage = () => {
                   <label className="text-[#7E2ADB]">
                     E-mail
                   </label>
-                  <input type="email" className="w-full mb-2 px-2 py-2
-                  rounded-[12px] md:rounded-[16px] lg:rounded-[16px]
+                  <input type="email" className="w-full h-[30px] md:h-[35px] mb-2 px-2 py-2
+                  text-[12px] sm:text-[14px] md:text-[16px]
+                  rounded-[8px] md:rounded-[12px]
                   border-solid border-2 border-[#7E2ADB] focus:outline-none" />
                   <label className="text-[#7E2ADB]">
                     Senha
                   </label>
-                  <input type="password" className="w-full mb-2 px-2 py-2
-                  border-solid border-2 border-[#7E2ADB] focus:outline-none
-                  rounded-[12px] md:rounded-[16px] lg:rounded-[16px]" />
+                  <input type="password" className="w-full h-[30px] md:h-[35px] mb-2 px-2 py-2
+                   text-[14px] sm:text-[16px] md:text-[18px]
+                   rounded-[8px] md:rounded-[12px]
+                  border-solid border-2 border-[#7E2ADB] focus:outline-none" />
                 </form>
-                <div className="flex flex-col-reverse md:flex-row justify-between items-center w-full py-4">
-                  <span className="text-[#646464] pt-4">
+                <div className="flex flex-col-reverse items-center justify-between md:flex-row md:justify-between md:items-center w-full py-4">
+                  <span className="text-[#646464] px-8 py-4">
                     Não possui uma conta? 
                     <a className="underline text-[#7E2ADB] cursor-pointer"> Cadastre-se
                     </a>
