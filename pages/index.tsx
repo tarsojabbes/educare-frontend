@@ -1,10 +1,20 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import Image1 from '/assets/principal-main-page.png'
-
+import style from "../styles/index.module.scss"
 
 const Home: NextPage = () => {
+
+  const [showDropdown, setShowDropdown] = useState(false)
+
+  const openCloseDropdown = () => {
+    setShowDropdown(!showDropdown)
+  }
+
+
+
   return (
     <div >
       <nav className="w-full flex justify-between items-center pl-8 lg:pl-10 pr-10 pt-5 pb-5 absolute">
@@ -20,8 +30,21 @@ const Home: NextPage = () => {
             Cadastre-se
           </Link>
           </button>
+          <button onClick={openCloseDropdown}>{showDropdown ? "Open" : "Close"} dropdown</button>
         </div>
+        
       </nav>
+
+      {showDropdown ? (
+      <div className={style.dropdown}>
+          <Link href="/login">
+            <a>Entrar</a>
+          </Link>
+          <Link href="/cadastro">
+            <a>Cadastre-se</a>
+          </Link>
+        </div> ) : ""}
+
 
       <div className='w-full h-screen
           flex flex-col-reverse justify-center items-center lg:flex-row 
