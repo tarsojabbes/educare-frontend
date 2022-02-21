@@ -1,19 +1,27 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image1 from '/assets/principal-main-page.png'
+import MenuIcon from '/assets/menu-icon.png'
+import CloseIcone from '/assets/close-icon.png'
 import style from "../styles/index.module.scss"
 
 const Home: NextPage = () => {
 
   const [showDropdown, setShowDropdown] = useState(false)
 
-  const openCloseDropdown = () => {
-    setShowDropdown(!showDropdown)
-  }
-
-
+  useEffect(
+    () => {
+      const updateSize = () => {
+        if (window.screen.width > 768){
+          setShowDropdown(false)
+        }
+      }
+      window.addEventListener("resize", updateSize)
+      updateSize()
+    }
+  , [])
 
   return (
     <div >
@@ -30,9 +38,10 @@ const Home: NextPage = () => {
             Cadastre-se
           </Link>
           </button>
-          <button onClick={openCloseDropdown}>{showDropdown ? "Open" : "Close"} dropdown</button>
         </div>
-        
+        <button onClick={() => setShowDropdown(!showDropdown)} className={style["menu-toggle"]}>
+          <Image src={showDropdown ? CloseIcone : MenuIcon} height="40px" width="40px"/>
+        </button>
       </nav>
 
       {showDropdown ? (
