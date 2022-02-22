@@ -11,6 +11,7 @@ $purple: #7E2ADB;
     align-items: flex-start;
     margin-top: 6em;
     padding-left: 1.5em;
+    z-index: 9999;
 
     a {
         font-size: 20px;
@@ -29,5 +30,14 @@ $purple: #7E2ADB;
         display: flex;
         justify-content: center;
         align-items: center;
+        
+    }
+
+    .dropdown {
+        height: 12vh;
+
+        a {
+            font-size: 16px;
+        }
     }
 }

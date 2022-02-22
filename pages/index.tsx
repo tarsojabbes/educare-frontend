@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   return (
     <div >
       <nav className="w-full flex justify-between items-center pl-8 lg:pl-10 pr-10 pt-5 pb-5 absolute">
-        <h1 className="text-[40px] text-[#7E2ADB] font-black">Educare</h1>
+        <h1 className="text-[32px] md:text-[40px] text-[#7E2ADB] font-black">Educare</h1>
         <div className="hidden md:block">
           <Link href="/login">
             <a className="text-[20px] text-[#7E2ADB] pr-7">
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           </button>
         </div>
         <button onClick={() => setShowDropdown(!showDropdown)} className={style["menu-toggle"]}>
-          <Image src={showDropdown ? CloseIcone : MenuIcon} height="40px" width="40px"/>
+          <Image src={showDropdown ? CloseIcone : MenuIcon} height="30px" width="30px"/>
         </button>
       </nav>
 
