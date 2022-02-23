@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-
+import BackIcon from "../assets/back-icon.png"
+import Image from "next/image";
 
 const Cadastro: NextPage = () => {
   return (
@@ -14,6 +15,14 @@ const Cadastro: NextPage = () => {
         <main className="h-[90%] md:h-fit w-[90vw] sm:w-[80vw] md:w-[60vw] xl:w-[38vw] pt-20 pb-20 p-10
               flex flex-col justify-center items-center
               bg-[#FFF] rounded-t-3xl md:rounded-3xl shadow-lg">
+                <div className="w-[100%] flex justify-start py-4">
+                  <Link href="/">
+                    <div className="w-[100%] flex justify-start">
+                    <Image src={BackIcon} width="30px" height="30px"/>
+                    <h3 className="text-[14px] md:text-[16px] pl-2 text-[#7E2ADB] flex items-center">Voltar ao início</h3>
+                    </div>
+                  </Link>
+                </div>
           <h1 className="text-[30px] md:text-[36px] lg:text-[40px] text-[#7E2ADB]">
             Crie sua conta <span className="font-black">Educare</span>
           </h1>
